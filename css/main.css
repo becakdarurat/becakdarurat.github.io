@@ -9,12 +9,17 @@
   box-sizing: border-box;
 }
 
+body {
+  height: 1000px;
+}
+
 header {
   position: fixed;
   top: 0;
   display: grid;
   grid-template-columns: 1fr;
   width: 100vw;
+  background-color: white;
 }
 header nav {
   display: grid;
