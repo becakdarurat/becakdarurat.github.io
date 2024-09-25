@@ -1,0 +1,110 @@
+// Font google Oswald
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+// Mixin
+@mixin grid_template ($gtc: 1fr, $gtr: 1fr){
+    display: grid;
+    grid-template-columns: $gtc;
+    grid-template-rows: $gtr;
+}
+
+:root {
+    font: 62.5%/18px "Oswald";
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    position: fixed;
+    top: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100vw;
+    nav {
+        display: grid;
+        grid-template-columns: 1fr 3fr 1fr;
+        grid-template-rows: 40px;
+        justify-items: space-evenly;
+        align-items: center;
+        border-bottom: 3px solid black;
+        .logo {
+            justify-self: center;
+            h1 {
+                font-size: 1.8rem;
+            }
+        }
+        .navigasi {
+            width: 50vw;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            justify-items: center;
+            grid-auto-flow: column;
+            justify-content: space-between;
+            li {
+                list-style: none;
+                a {
+                    display: block;
+                    text-decoration: none;
+                    font-size: 1.6rem;
+                    color: white;
+                    background-color: black;
+                    padding: 0 30px;
+                }
+                a:hover {
+                    background-color: white;
+                    color: black;
+                }
+            }
+        }
+        .sign {
+            width: 20vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: start;
+            li {
+                list-style: none;
+                a {
+                    text-align: center;
+                    display: block;
+                    text-decoration: none;
+                    font-size: 1.6rem;
+                    color: white;
+                    background-color: black;
+                    padding: 0 30px;
+                }
+                a:hover {
+                    background-color: white;
+                    color: black;
+                    padding: 0 30px;
+                    
+                }
+            }
+        }
+    }
+}
+
+main {
+    margin-top: 40px;
+    @include grid_template(1fr 2fr, calc(100vh - 40px));
+    .hero-img {
+        grid-column: 1 / 2;
+        // grid-row: -2 / 3;
+        grid-row: 1 / 2;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    section {
+        grid-column: 2 / 3;
+    }
+    .vidio-container {
+        @include grid_template(1fr 1fr, calc(100vh - 40px));
+    }
+    .vidio-1,
+    .vidio-2 {
+        width: 100%;
+        height: 100%;
+    }
+}
