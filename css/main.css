@@ -10,32 +10,32 @@
 }
 
 body {
-  height: 1000px;
+  height: 2000px;
 }
 
-header {
+.header {
   position: fixed;
   top: 0;
   display: grid;
   grid-template-columns: 1fr;
+  grid-template-rows: 40px;
   width: 100vw;
   background-color: white;
 }
-header nav {
+.header nav {
   display: grid;
   grid-template-columns: 1fr 3fr 1fr;
-  grid-template-rows: 40px;
   justify-items: space-evenly;
   align-items: center;
   border-bottom: 3px solid black;
 }
-header nav .logo {
+.header nav .logo {
   justify-self: center;
 }
-header nav .logo h1 {
+.header nav .logo h1 {
   font-size: 1.8rem;
 }
-header nav .navigasi {
+.header nav .navigasi {
   width: 50vw;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
@@ -43,10 +43,10 @@ header nav .navigasi {
   grid-auto-flow: column;
   justify-content: space-between;
 }
-header nav .navigasi li {
+.header nav .navigasi li {
   list-style: none;
 }
-header nav .navigasi li a {
+.header nav .navigasi li a {
   display: block;
   text-decoration: none;
   font-size: 1.6rem;
@@ -54,20 +54,20 @@ header nav .navigasi li a {
   background-color: black;
   padding: 0 30px;
 }
-header nav .navigasi li a:hover {
+.header nav .navigasi li a:hover {
   background-color: white;
   color: black;
 }
-header nav .sign {
+.header nav .sign {
   width: 20vw;
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: start;
 }
-header nav .sign li {
+.header nav .sign li {
   list-style: none;
 }
-header nav .sign li a {
+.header nav .sign li a {
   text-align: center;
   display: block;
   text-decoration: none;
@@ -76,7 +76,7 @@ header nav .sign li a {
   background-color: black;
   padding: 0 30px;
 }
-header nav .sign li a:hover {
+.header nav .sign li a:hover {
   background-color: white;
   color: black;
   padding: 0 30px;
@@ -87,6 +87,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: calc(100vh - 40px);
+  border-bottom: 5px solid black;
 }
 main .hero-img {
   grid-column: 1/2;
@@ -108,4 +109,38 @@ main .vidio-1,
 main .vidio-2 {
   width: 100%;
   height: 100%;
+}
+
+article {
+  padding-top: 50px;
+  font-family: serif;
+}
+article header h1 {
+  margin-top: 40px;
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 2.7rem;
+}
+article header p {
+  margin-top: 15px;
+  text-align: center;
+}
+article header p q {
+  font-size: 1.8rem;
+}
+article section {
+  margin: 30px auto;
+}
+article section h2 {
+  font-family: sans-serif;
+  text-align: center;
+  font-size: 2.4rem;
+}
+article section p {
+  margin: 10px auto;
+  font-size: 2rem;
+  line-height: 3rem;
+  width: 95vw;
+  border: 1px solid #333;
+  padding: 8px 12px;
 }/*# sourceMappingURL=main.css.map */
