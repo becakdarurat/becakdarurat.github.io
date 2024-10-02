@@ -16,7 +16,7 @@
     box-sizing: border-box;
 }
 body {
-    height: 2000px;
+    height: 4000px;
 }
 .header {
     position: fixed;
@@ -54,10 +54,11 @@ body {
                     color: white;
                     background-color: black;
                     padding: 0 30px;
-                }
+                
                 a:hover {
                     background-color: white;
                     color: black;
+                    padding: 0 30px;
                 }
             }
         }
@@ -81,7 +82,6 @@ body {
                     background-color: white;
                     color: black;
                     padding: 0 30px;
-                    
                 }
             }
         }
@@ -146,6 +146,33 @@ article {
             width: 95vw;
             border: 1px solid #333;
             padding: 8px 12px;
+        }
+    }
+}
+figure {
+    padding-top: 50px;
+    .gallery {
+        box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.5);
+    }
+    h1 {
+        text-align: center;
+    }
+    .gallery {
+        width: 80vw;
+        margin: 50px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 600px repeat(4, auto);
+        grid-auto-flow: row;
+        gap: 5px;
+        .item-satu {
+            grid-column: 1 / -1;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* atau contain, atau fill */
+        }
+        img {
+            width: 100%;
         }
     }
 }
