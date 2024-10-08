@@ -38,6 +38,29 @@ body {
                 font-size: 1.8rem;
             }
         }
+        .sign {
+            width: 20vw;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-items: start;
+            li {
+                list-style: none;
+                a {
+                    text-align: center;
+                    display: block;
+                    text-decoration: none;
+                    font-size: 1.6rem;
+                    color: white;
+                    background-color: black;
+                    padding: 0 30px;
+                }
+                a:hover {
+                    background-color: white;
+                    color: black;
+                    padding: 0 30px;
+                }
+            }
+        }
         .navigasi {
             width: 50vw;
             display: grid;
@@ -62,30 +85,8 @@ body {
                 }
             }
         }
-        .sign {
-            width: 20vw;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            justify-items: start;
-            li {
-                list-style: none;
-                a {
-                    text-align: center;
-                    display: block;
-                    text-decoration: none;
-                    font-size: 1.6rem;
-                    color: white;
-                    background-color: black;
-                    padding: 0 30px;
-                }
-                a:hover {
-                    background-color: white;
-                    color: black;
-                    padding: 0 30px;
-                }
-            }
-        }
     }
+}
 }
 
 main {
@@ -151,28 +152,23 @@ article {
 }
 figure {
     padding-top: 50px;
-    .gallery {
-        box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.5);
-    }
     h1 {
         text-align: center;
     }
     .gallery {
         width: 80vw;
+        box-shadow: 1px 1px 5px 5px rgba(0, 0, 0, 0.5);
         margin: 50px auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: 600px repeat(4, auto);
+        grid-template-rows:  repeat(3, 1fr);
         grid-auto-flow: row;
         gap: 5px;
-        .item-satu {
-            grid-column: 1 / -1;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* atau contain, atau fill */
-        }
         img {
             width: 100%;
+        }
+        img:nth-child(9) {
+            height: 100%;
         }
     }
 }
