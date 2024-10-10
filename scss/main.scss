@@ -20,6 +20,7 @@ body {
 }
 .header {
     position: fixed;
+    z-index: 999;
     top: 0;
     display: grid;
     grid-template-columns: 1fr;
@@ -77,7 +78,7 @@ body {
                     color: white;
                     background-color: black;
                     padding: 0 30px;
-                
+                }
                 a:hover {
                     background-color: white;
                     color: black;
@@ -86,7 +87,6 @@ body {
             }
         }
     }
-}
 }
 
 main {
@@ -169,6 +169,70 @@ figure {
         }
         img:nth-child(9) {
             height: 100%;
+        }
+    }
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    h1 {
+        text-align: center;
+        padding-top: 50px;
+        font-size: 2.4rem;
+    }
+    .flex-card {
+        margin: auto;
+        width: 50vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        .card-lg {
+            transform: scale(1.1);
+        }
+        .section-card {
+            margin: 30px auto;
+            border: 2px solid black;
+            border-radius: 10px;
+            width: 260px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            header {
+                img {
+                    border-radius: 50%;
+                    padding: 15px;
+                }
+                h2 {
+                    font-size: 2rem;
+                    padding-top: 10px;
+                    text-align: center;
+                }
+            }
+            .content {
+                i {
+                    margin: 0 auto;
+                    font-size: 2rem;
+                }
+                p {
+                    font-size: 1.6rem;
+                    padding-bottom: 20px;
+                }
+            }
+            .content h2,
+            .content i,
+            footer {
+                padding: 2px 0px 20px;
+                a {
+                    padding: 5px 20px;
+                    background: black;
+                    color: white;
+                    border-radius: 5px;
+                    font-size: 1.8rem;
+                    text-decoration: none;
+                }
+            }
         }
     }
 }
