@@ -15,9 +15,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    height: 4000px;
-}
 .header {
     position: fixed;
     z-index: 999;
@@ -175,10 +172,25 @@ figure {
 .card {
     display: flex;
     flex-direction: column;
+    h3 {
+        text-align: center;
+        font-size: 2rem;
+        padding-top: 20px ;
+    }
     h1 {
         text-align: center;
         padding-top: 50px;
         font-size: 2.4rem;
+    }
+    a {
+        padding: 5px 20px;
+        background-color: black;
+        width: 300px;
+        margin: auto;
+        text-align: center;
+        color: white;
+        text-decoration: none;
+        font-size: 2rem;
     }
     .flex-card {
         margin: auto;
