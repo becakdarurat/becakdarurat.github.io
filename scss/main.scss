@@ -10,6 +10,9 @@
 :root {
     font: 62.5%/18px "Oswald";
 }
+body {
+    height: 5000px;
+}
 * {
     margin: 0;
     padding: 0;
@@ -245,6 +248,48 @@ figure {
                     text-decoration: none;
                 }
             }
+        }
+    }
+}
+.contact {
+    display: grid;
+    width: 100vw;
+    place-items: center;
+    h1 {
+        padding: 70px 0 50px 0;
+        font-size: 2.4rem;
+    }
+    form {
+        display: grid;
+        width: 50vw;
+        grid-template-columns: 1fr ;
+        border: 5px solid black;
+        padding: 20px;
+        label {
+            width: 100%;
+            font-size: 2rem;
+        }
+        input {
+            width: 100%;
+            margin: 10px 0 10px 0;
+            height: 30px;
+        }
+        select {
+            width: 100%;
+            margin: 10px 0 10px 0;
+            cursor: pointer;
+        }
+        textarea {
+            width: 100%;
+            margin: 10px 0 10px 0;
+        }
+        button {
+            padding: 8px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #333;
+            color: white;
         }
     }
 }
