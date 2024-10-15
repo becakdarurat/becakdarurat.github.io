@@ -3,6 +3,10 @@
   font: 62.5%/18px "Oswald";
 }
 
+body {
+  height: 5000px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -242,4 +246,47 @@ figure .gallery img:nth-child(9) {
   border-radius: 5px;
   font-size: 1.8rem;
   text-decoration: none;
+}
+
+.contact {
+  display: grid;
+  width: 100vw;
+  place-items: center;
+}
+.contact h1 {
+  padding: 70px 0 50px 0;
+  font-size: 2.4rem;
+}
+.contact form {
+  display: grid;
+  width: 50vw;
+  grid-template-columns: 1fr;
+  border: 5px solid black;
+  padding: 20px;
+}
+.contact form label {
+  width: 100%;
+  font-size: 2rem;
+}
+.contact form input {
+  width: 100%;
+  margin: 10px 0 10px 0;
+  height: 30px;
+}
+.contact form select {
+  width: 100%;
+  margin: 10px 0 10px 0;
+  cursor: pointer;
+}
+.contact form textarea {
+  width: 100%;
+  margin: 10px 0 10px 0;
+}
+.contact form button {
+  padding: 8px;
+  cursor: pointer;
+}
+.contact form button:hover {
+  background-color: #333;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
