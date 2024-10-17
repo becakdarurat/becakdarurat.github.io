@@ -3,10 +3,6 @@
   font: 62.5%/18px "Oswald";
 }
 
-body {
-  height: 5000px;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -252,6 +248,7 @@ figure .gallery img:nth-child(9) {
   display: grid;
   width: 100vw;
   place-items: center;
+  padding-bottom: 130px;
 }
 .contact h1 {
   padding: 70px 0 50px 0;
@@ -289,4 +286,33 @@ figure .gallery img:nth-child(9) {
 .contact form button:hover {
   background-color: #333;
   color: white;
+}
+
+#footer {
+  width: 100vw;
+  background-color: #333;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+#footer p {
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding: 10px 20px;
+}
+#footer p i {
+  color: red;
+}
+#footer button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin: auto;
+}
+#footer button a {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
 }/*# sourceMappingURL=main.css.map */
